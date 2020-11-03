@@ -23,7 +23,14 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "" }
+  state = {
+    TextInput_3: "",
+    TextInput_4: "",
+    TextInput_5: "",
+    TextInput_6: "",
+    TextInput_7: "",
+    TextInput_8: ""
+  }
 
   render = () => (
     <View>
@@ -31,6 +38,31 @@ export default class Blank extends React.Component {
         placeholder="Sample text input placeholder"
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_4}
+        onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_5}
+        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_6}
+        onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_7}
+        onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_8}
+        onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
       />
     </View>
   )
@@ -41,6 +73,14 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  TextInput_3: {}
+  TextInput_3: {},
+  View_1: {},
+  TextInput_3: {},
+  TextInput_4: {},
+  TextInput_5: {},
+  TextInput_6: {},
+  TextInput_7: {},
+  TextInput_8: {}
 })
